@@ -1,0 +1,139 @@
+<!-- /pages/test-network.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Network - Intrusion Detection System</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">
+        <span class="gradient-text">Intrusion Detection</span>
+      </div>
+      <div class="navbar-links">
+        <a href="/pages/index.html" class="nav-link">Home</a>
+        <a href="/pages/about.html" class="nav-link">About Us</a>
+        <div class="button-group">
+          <a href="/pages/login.html" class="btn login-btn">Login</a>
+          <a href="/pages/register.html" class="btn register-btn">Register</a>
+        </div>
+        <a
+          href="/pages/test-network.html"
+          id="test-network-btn"
+          class="btn register-btn"
+          style="display: none"
+          >Test Network</a
+        >
+        <button id="logout-btn" class="btn register-btn" style="display: none">
+          Logout
+        </button>
+      </div>
+      <div class="navbar-hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="dashboard-container">
+      <div class="network-status-card">
+        <h2 class="dashboard-title gradient-text">Network Status</h2>
+        <div class="unified-status-box">
+          <div class="metric-row">
+            <span class="metric-name">Active Connections</span>
+            <span class="metric-value" id="active-connections">0</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-name">Bandwidth Usage</span>
+            <span class="metric-value" id="bandwidth-usage">0 Mbps</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-name">Recent Threats</span>
+            <span class="metric-value" id="threats-count">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <h2 class="auth-title gradient-text">Test Network</h2>
+        <form id="test-network-form" class="auth-form">
+          <div id="test-result" class="auth-error" style="display: none"></div>
+          
+          <div class="input-group">
+            <label for="duration">Duration</label>
+            <input type="text" id="duration" class="auth-input" placeholder="Enter duration" />
+          </div>
+
+          <div class="input-group">
+            <label for="protocol_type">Protocol Type</label>
+            <input type="text" id="protocol_type" class="auth-input" placeholder="Enter protocol type" />
+          </div>
+
+          <div class="input-group">
+            <label for="flag">Flag</label>
+            <input type="text" id="flag" class="auth-input" placeholder="Enter flag" />
+          </div>
+
+          <div class="input-group">
+            <label for="src_bytes">Source Bytes</label>
+            <input type="text" id="src_bytes" class="auth-input" placeholder="Enter source bytes" />
+          </div>
+
+          <div class="input-group">
+            <label for="dst_bytes">Destination Bytes</label>
+            <input type="text" id="dst_bytes" class="auth-input" placeholder="Enter destination bytes" />
+          </div>
+
+          <div class="input-group">
+            <label for="land">Land</label>
+            <input type="text" id="land" class="auth-input" placeholder="Enter land" />
+          </div>
+
+          <div class="input-group">
+            <label for="wrong_fragment">Wrong Fragment</label>
+            <input type="text" id="wrong_fragment" class="auth-input" placeholder="Enter wrong fragment" />
+          </div>
+
+          <div class="input-group">
+            <label for="urgent">Urgent</label>
+            <input type="text" id="urgent" class="auth-input" placeholder="Enter urgent" />
+          </div>
+
+          <div class="input-group">
+            <label for="hot">Hot</label>
+            <input type="text" id="hot" class="auth-input" placeholder="Enter hot" />
+          </div>
+
+          <div class="input-group">
+            <label for="num_failed_logins">Number of Failed Logins</label>
+            <input type="text" id="num_failed_logins" class="auth-input" placeholder="Enter number of failed logins" />
+          </div>
+
+          <div class="input-group">
+            <label for="logged_in">Logged In</label>
+            <input type="text" id="logged_in" class="auth-input" placeholder="Enter logged in status" />
+          </div>
+
+          <div class="input-group">
+            <label for="num_compromised">Number Compromised</label>
+            <input type="text" id="num_compromised" class="auth-input" placeholder="Enter number compromised" />
+          </div>
+
+          <div class="input-group">
+            <label for="dst_host_same_src_port_rate">Dst Host Same Src Port Rate</label>
+            <input type="text" id="dst_host_same_src_port_rate" class="auth-input" placeholder="Enter dst host same src port rate" />
+          </div>
+
+          <div class="input-group">
+            <label for="dst_host_srv_diff_host_rate">Dst Host Srv Diff Host Rate</label>
+            <input type="text" id="dst_host_srv_diff_host_rate" class="auth-input" placeholder="Enter dst host srv diff host rate" />
+          </div>
+
+          <button type="submit" class="auth-btn primary">Detect Attack</button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

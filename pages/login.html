@@ -1,0 +1,72 @@
+<!-- /pages/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Intrusion Detection System</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">
+        <span class="gradient-text">Intrusion Detection</span>
+      </div>
+      <div class="navbar-links">
+        <a href="/pages/index.html" class="nav-link">Home</a>
+        <a href="/pages/about.html" class="nav-link">About Us</a>
+        <div class="button-group">
+          <a href="/pages/login.html" class="btn login-btn">Login</a>
+          <a href="/pages/register.html" class="btn register-btn">Register</a>
+        </div>
+        <a
+          href="/pages/test-network.html"
+          id="test-network-btn"
+          class="btn register-btn"
+          style="display: none"
+          >Test Network</a
+        >
+        <button id="logout-btn" class="btn register-btn" style="display: none">
+          Logout
+        </button>
+      </div>
+      <div class="navbar-hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="auth-container">
+      <div class="auth-card">
+        <h2 class="auth-title gradient-text">Welcome Back</h2>
+        <form id="login-form" class="auth-form">
+          <div id="auth-error" class="auth-error" style="display: none"></div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="auth-input"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="auth-input"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button type="submit" class="auth-btn primary">Sign In</button>
+        </form>
+        <div class="auth-footer">
+          <span>Don't have an account? </span>
+          <a href="/pages/register.html" class="auth-link">Create Account</a>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

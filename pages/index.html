@@ -1,0 +1,97 @@
+<!-- /pages/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Intrusion Detection System</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">
+        <span class="gradient-text">Intrusion Detection</span>
+      </div>
+      <div class="navbar-links">
+        <a href="/pages/index.html" class="nav-link">Home</a>
+        <a href="/pages/about.html" class="nav-link">About Us</a>
+        <div class="button-group">
+          <a href="/pages/login.html" class="btn login-btn">Login</a>
+          <a href="/pages/register.html" class="btn register-btn">Register</a>
+        </div>
+        <a
+          href="/pages/test-network.html"
+          id="test-network-btn"
+          class="btn register-btn"
+          style="display: none"
+          >Test Network</a
+        >
+        <button id="logout-btn" class="btn register-btn" style="display: none">
+          Logout
+        </button>
+      </div>
+      <div class="navbar-hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="home-container">
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="gradient-text">Intrusion Detection</span> System
+          </h1>
+          <p class="hero-subtitle">
+            Advanced Threat Detection Through Network Analysis and System
+            Monitoring
+          </p>
+          <div class="cta-buttons">
+            <!-- Updated dynamically by script.js -->
+          </div>
+        </div>
+      </section>
+      <section class="features-section" id="features-section">
+        <div class="feature-card">
+          <div class="feature-icon network-traffic"></div>
+          <h3>Network Traffic Analysis</h3>
+          <p>
+            Real-time monitoring of network patterns and suspicious activities
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon threat-detection"></div>
+          <h3>Threat Detection</h3>
+          <p>AI-powered identification of potential security breaches</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon system-monitor"></div>
+          <h3>System Monitoring</h3>
+          <p>24/7 surveillance of critical system components and logs</p>
+        </div>
+      </section>
+      <section id="system-info" class="system-info" style="display: none">
+        <div class="info-container">
+          <h2>How Our Intrusion Detection System Works</h2>
+          <div class="info-section">
+            <h3>Real-Time Network Analysis</h3>
+            <p>Our system continuously monitors network traffic using advanced packet inspection and analysis techniques. It examines network patterns, protocols, and data flows to identify potential security threats in real-time.</p>
+          </div>
+          <div class="info-section">
+            <h3>AI-Powered Threat Detection</h3>
+            <p>Using machine learning algorithms, our system learns from historical data and evolving threat patterns to detect both known and zero-day attacks. It analyzes behavior patterns and identifies anomalies that could indicate potential security breaches.</p>
+          </div>
+          <div class="info-section">
+            <h3>Comprehensive System Monitoring</h3>
+            <p>The system maintains constant surveillance of critical system components, log files, and system activities. It tracks system calls, file integrity, and user behaviors to detect any unauthorized or suspicious activities.</p>
+          </div>
+          <div class="info-section">
+            <h3>Instant Alert System</h3>
+            <p>When potential threats are detected, our system immediately alerts security administrators and provides detailed information about the nature of the threat, affected systems, and recommended actions for mitigation.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!-- /pages/register.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Intrusion Detection System</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">
+        <span class="gradient-text">Intrusion Detection</span>
+      </div>
+      <div class="navbar-links">
+        <a href="/pages/index.html" class="nav-link">Home</a>
+        <a href="/pages/about.html" class="nav-link">About Us</a>
+        <div class="button-group">
+          <a href="/pages/login.html" class="btn login-btn">Login</a>
+          <a href="/pages/register.html" class="btn register-btn">Register</a>
+        </div>
+        <a
+          href="/pages/test-network.html"
+          id="test-network-btn"
+          class="btn register-btn"
+          style="display: none"
+          >Test Network</a
+        >
+        <button id="logout-btn" class="btn register-btn" style="display: none">
+          Logout
+        </button>
+      </div>
+      <div class="navbar-hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="auth-container">
+      <div class="auth-card">
+        <h2 class="auth-title gradient-text">Create Account</h2>
+        <form id="register-form" class="auth-form">
+          <div id="auth-error" class="auth-error" style="display: none"></div>
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              class="auth-input"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="auth-input"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="auth-input"
+              placeholder="Create a password"
+            />
+          </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              class="auth-input"
+              placeholder="Confirm your password"
+            />
+          </div>
+          <button type="submit" class="auth-btn primary">Sign Up</button>
+        </form>
+        <div class="auth-footer">
+          <span>Already have an account? </span>
+          <a href="/pages/login.html" class="auth-link">Sign In</a>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
